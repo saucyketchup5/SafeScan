@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | SAFE SCAN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo">
+        </div>
+
+        <div class="logo-text">
+            <h2>SAFE <span>SCAN</span></h2>
+            <p>Be Aware. Be Safe. Be You.</p>
+        </div>
+
+    </a>
+
+    <nav id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="risks.html" class="nav-link">Know the Risks</a>
+        <div class="survey-dropdown">
+            <button type="button" class="nav-link survey-dropdown-btn" id="surveyDropdownButton"
+                    onclick="toggleSurveyDropdown(event)" aria-expanded="false" aria-controls="surveyDropdownMenu">
+                Survey Results <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="survey-dropdown-menu" id="surveyDropdownMenu">
+                <button type="button" onclick="showSurveySection('respondentProfile')"><span>Respondent Profile</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('internetUse')"><span>Internet Use and Online Behavior</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('awareness')"><span>Awareness Information Needs and Podcast Preferences</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('helpSeeking')"><span>Help-Seeking and Reporting</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('overallData')"><span>Overall Data Interpretation</span><b>›</b></button>
+            </div>
+        </div>
+        <a href="resources.html" class="nav-link active">Resources</a>
+        <a href="podcast.html" class="nav-link">Podcast</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="help.html" class="nav-link">Get Help</a>
+    </nav>
+
+    <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+</header>
+<main>
+<section class="page" id="resources">
+
+    <div class="page-title">
+
+        <h2>Resources</h2>
+
+        <p>
+            Helpful information for young people, parents,
+            teachers, and guardians.
+        </p>
+
+    </div>
+
+
+    <div class="three-columns">
+
+        <div class="card resource">
+
+            <span>📘</span>
+
+            <h3>Online Safety Checklist</h3>
+
+            <p>
+                Learn about passwords, privacy settings,
+                and safe sharing.
+            </p>
+
+            <button onclick="resourceMessage()">
+                Read More →
+            </button>
+
+        </div>
+
+
+        <div class="card resource">
+
+            <span>🧭</span>
+
+            <h3>Safety Response Guide</h3>
+
+            <p>
+                Learn what to do when an online experience
+                makes you uncomfortable.
+            </p>
+
+            <button onclick="resourceMessage()">
+                Read Guide →
+            </button>
+
+        </div>
+
+
+        <div class="card resource">
+
+            <span>👨‍👩‍👧</span>
+
+            <h3>Parent & Guardian Guide</h3>
+
+            <p>
+                Tips for discussing online safety with children
+                and young people.
+            </p>
+
+            <button onclick="resourceMessage()">
+                Open Guide →
+            </button>
+
+        </div>
+
+
+        <div class="card resource">
+
+            <span>🏫</span>
+
+            <h3>Teacher Toolkit</h3>
+
+            <p>
+                Classroom ideas for teaching digital safety
+                and responsibility.
+            </p>
+
+            <button onclick="resourceMessage()">
+                Open Toolkit →
+            </button>
+
+        </div>
+
+
+        <div class="card resource">
+
+            <span>🔐</span>
+
+            <h3>Privacy Basics</h3>
+
+            <p>
+                Understand how to protect personal information
+                online.
+            </p>
+
+            <button onclick="resourceMessage()">
+                Learn More →
+            </button>
+
+        </div>
+
+
+        <div class="card resource">
+
+            <span>📢</span>
+
+            <h3>Report & Speak Up</h3>
+
+            <p>
+                Learn why speaking with a trusted adult is important.
+            </p>
+
+            <a href="help.html">
+                Get Help →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+<footer>
+
+    <div>
+        <div class="footer-brand">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo" class="footer-logo">
+            <strong>SAFE SCAN</strong>
+        </div>
+        <small>Be Aware. Be Safe. Be You.</small>
+    </div>
+
+    <div>
+        Together for a safer online world.
+    </div>
+
+    <div>
+        #SafeScan &nbsp; #ThinkBeforeYouClick
+    </div>
+
+    <div class="copyright">
+        <p><small>&copy; 2026 SAFE SCAN. All rights reserved.</small></p>
+    </div>
+
+    <div class="footer-partners" aria-label="SAFE SCAN partner logos">
+        <img src="Images/partner-logo-1.png" alt="Partner organization logo">
+        <img src="Images/partner-logo-2.png" alt="German Cooperation logo">
+        <img src="Images/partner-logo-3.png" alt="CPT CSA logo">
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know the Risks | SAFE SCAN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo">
+        </div>
+
+        <div class="logo-text">
+            <h2>SAFE <span>SCAN</span></h2>
+            <p>Be Aware. Be Safe. Be You.</p>
+        </div>
+
+    </a>
+
+    <nav id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="risks.html" class="nav-link active">Know the Risks</a>
+        <div class="survey-dropdown">
+            <button type="button" class="nav-link survey-dropdown-btn" id="surveyDropdownButton"
+                    onclick="toggleSurveyDropdown(event)" aria-expanded="false" aria-controls="surveyDropdownMenu">
+                Survey Results <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="survey-dropdown-menu" id="surveyDropdownMenu">
+                <button type="button" onclick="showSurveySection('respondentProfile')"><span>Respondent Profile</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('internetUse')"><span>Internet Use and Online Behavior</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('awareness')"><span>Awareness Information Needs and Podcast Preferences</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('helpSeeking')"><span>Help-Seeking and Reporting</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('overallData')"><span>Overall Data Interpretation</span><b>›</b></button>
+            </div>
+        </div>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="podcast.html" class="nav-link">Podcast</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="help.html" class="nav-link">Get Help</a>
+    </nav>
+
+    <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+</header>
+<main>
+<section class="page" id="risks">
+
+    <div class="page-title">
+
+        <h2>Know the Risks</h2>
+
+        <p>
+            Learn about common online risks and how to recognize
+            warning signs.
+        </p>
+
+    </div>
+
+
+    <div class="risk-grid">
+
+
+        <div class="card risk-card">
+
+            <span>01</span>
+
+            <h3>Online Grooming</h3>
+
+            <p>
+                Someone may build trust with a young person
+                and eventually pressure them to share private
+                information or images.
+            </p>
+
+        </div>
+
+
+        <div class="card risk-card">
+
+            <span>02</span>
+
+            <h3>Cyberbullying</h3>
+
+            <p>
+                Harmful messages, threats, harassment,
+                humiliation, or repeated online abuse.
+            </p>
+
+        </div>
+
+
+        <div class="card risk-card">
+
+            <span>03</span>
+
+            <h3>Privacy & Oversharing</h3>
+
+            <p>
+                Sharing too much personal information can make
+                it easier for strangers to identify or contact you.
+            </p>
+
+        </div>
+
+
+        <div class="card risk-card">
+
+            <span>04</span>
+
+            <h3>Scams & Phishing</h3>
+
+            <p>
+                Be careful with suspicious links, fake giveaways,
+                passwords requests, and urgent messages.
+            </p>
+
+        </div>
+
+
+        <div class="card risk-card">
+
+            <span>05</span>
+
+            <h3>Unsafe Content</h3>
+
+            <p>
+                Young people may encounter harmful, violent,
+                sexual, or inappropriate content online.
+            </p>
+
+        </div>
+
+
+        <div class="card risk-card">
+
+            <span>06</span>
+
+            <h3>Unsafe Meetings</h3>
+
+            <p>
+                Be cautious when someone online pressures you
+                to meet privately or keep the meeting secret.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="warning">
+
+        🚩 <strong>Remember:</strong>
+
+        If something online makes you uncomfortable,
+        stop, block or report when appropriate,
+        and tell a trusted adult.
+
+    </div>
+
+</section>
+</main>
+<footer>
+
+    <div>
+        <div class="footer-brand">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo" class="footer-logo">
+            <strong>SAFE SCAN</strong>
+        </div>
+        <small>Be Aware. Be Safe. Be You.</small>
+    </div>
+
+    <div>
+        Together for a safer online world.
+    </div>
+
+    <div>
+        #SafeScan &nbsp; #ThinkBeforeYouClick
+    </div>
+
+    <div class="copyright">
+        <p><small>&copy; 2026 SAFE SCAN. All rights reserved.</small></p>
+    </div>
+
+    <div class="footer-partners" aria-label="SAFE SCAN partner logos">
+        <img src="Images/partner-logo-1.png" alt="Partner organization logo">
+        <img src="Images/partner-logo-2.png" alt="German Cooperation logo">
+        <img src="Images/partner-logo-3.png" alt="CPT CSA logo">
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
