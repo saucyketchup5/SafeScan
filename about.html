@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SAFE SCAN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo">
+        </div>
+
+        <div class="logo-text">
+            <h2>SAFE <span>SCAN</span></h2>
+            <p>Be Aware. Be Safe. Be You.</p>
+        </div>
+
+    </a>
+
+    <nav id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="risks.html" class="nav-link">Know the Risks</a>
+        <div class="survey-dropdown">
+            <button type="button" class="nav-link survey-dropdown-btn" id="surveyDropdownButton"
+                    onclick="toggleSurveyDropdown(event)" aria-expanded="false" aria-controls="surveyDropdownMenu">
+                Survey Results <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="survey-dropdown-menu" id="surveyDropdownMenu">
+                <button type="button" onclick="showSurveySection('respondentProfile')"><span>Respondent Profile</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('internetUse')"><span>Internet Use and Online Behavior</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('awareness')"><span>Awareness Information Needs and Podcast Preferences</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('helpSeeking')"><span>Help-Seeking and Reporting</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('overallData')"><span>Overall Data Interpretation</span><b>›</b></button>
+            </div>
+        </div>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="podcast.html" class="nav-link">Podcast</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="help.html" class="nav-link">Get Help</a>
+    </nav>
+
+    <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+</header>
+<main>
+<section class="page" id="about">
+
+    <div class="page-title">
+        <h2>About SAFE SCAN</h2>
+
+        <p>
+            Learn about our mission, vision, and purpose
+            in promoting safer online experiences.
+        </p>
+    </div>
+
+    <div class="card">
+
+        <h3>What is Project SAFE SCAN?</h3>
+
+        <p>
+            SAFE SCAN is a youth-led initiative that aims to raise
+            awareness about Online Sexual Abuse or Exploitation of
+            Children (OSAEC) and Child Sexual Abuse or Exploitation
+            Material (CSAEM).
+        </p>
+
+        <p>
+            The project promotes safer and more responsible online
+            behavior while helping young people recognize online
+            risks and understand where they can seek help.
+        </p>
+
+    </div>
+
+
+    <div class="three-columns">
+
+        <div class="card">
+
+            <div class="card-icon">🎯</div>
+
+            <h3>Our Mission</h3>
+
+            <p>
+                To empower young people with knowledge,
+                awareness, and safe digital habits.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">👁️</div>
+
+            <h3>Our Vision</h3>
+
+            <p>
+                A safer digital space where young people
+                understand their rights and recognize online risks.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">💚</div>
+
+            <h3>Our Core Values</h3>
+
+            <ul>
+                <li>Safety</li>
+                <li>Empowerment</li>
+                <li>Compassion</li>
+                <li>Digital Responsibility</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+<footer>
+
+    <div>
+        <div class="footer-brand">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo" class="footer-logo">
+            <strong>SAFE SCAN</strong>
+        </div>
+        <small>Be Aware. Be Safe. Be You.</small>
+    </div>
+
+    <div>
+        Together for a safer online world.
+    </div>
+
+    <div>
+        #SafeScan &nbsp; #ThinkBeforeYouClick
+    </div>
+
+    <div class="copyright">
+        <p><small>&copy; 2026 SAFE SCAN. All rights reserved.</small></p>
+    </div>
+
+    <div class="footer-partners" aria-label="SAFE SCAN partner logos">
+        <img src="Images/partner-logo-1.png" alt="Partner organization logo">
+        <img src="Images/partner-logo-2.png" alt="German Cooperation logo">
+        <img src="Images/partner-logo-3.png" alt="CPT CSA logo">
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

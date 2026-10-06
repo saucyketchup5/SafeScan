@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Results | SAFE SCAN</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+<a href="index.html" class="logo"><div class="logo-icon"><img src="Images/logo.png" alt="SAFE SCAN Logo"></div><div class="logo-text"><h2>SAFE <span>SCAN</span></h2><p>Be Aware. Be Safe. Be You.</p></div></a>
+<nav id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="risks.html" class="nav-link">Know the Risks</a>
+        <div class="survey-dropdown">
+            <button type="button" class="nav-link survey-dropdown-btn active" id="surveyDropdownButton"
+                    onclick="toggleSurveyDropdown(event)" aria-expanded="false" aria-controls="surveyDropdownMenu">
+                Survey Results <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="survey-dropdown-menu" id="surveyDropdownMenu">
+                <button type="button" onclick="showSurveySection('respondentProfile')"><span>Respondent Profile</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('internetUse')"><span>Internet Use and Online Behavior</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('awareness')"><span>Awareness Information Needs and Podcast Preferences</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('helpSeeking')"><span>Help-Seeking and Reporting</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('overallData')"><span>Overall Data Interpretation</span><b>›</b></button>
+            </div>
+        </div>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="podcast.html" class="nav-link">Podcast</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="help.html" class="nav-link">Get Help</a>
+    </nav>
+<button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+</header>
+<main><section class="page survey-page" id="survey">
+<div class="page-title"><span class="eyebrow">SAFE SCAN • SURVEY RESULTS</span><h1>Survey Results</h1><p>Survey findings from 240 student respondents, presented as clear visual summaries.</p></div>
+
+<section class="survey-section default-survey-section" id="surveyOverview">
+<div class="section-heading"><span>OVERVIEW</span><h2>Survey Overview</h2><p>Select a category from <strong>Survey Results</strong> above to explore the findings.</p></div>
+<div class="statistics"><div class="stat"><strong>240</strong><span>Student Respondents</span></div><div class="stat"><strong>92.92%</strong><span>Regular Internet Users</span></div><div class="stat"><strong>69.17%</strong><span>Access Internet at Home</span></div><div class="stat"><strong>40%</strong><span>Spend 1–3 Hours Online</span></div></div>
+<div class="overview-panel"><div><span>ABOUT THE DATA</span><h3>Who participated?</h3><p>The survey represents 240 students. The respondent profile, internet habits, awareness, information needs, and help-seeking responses are shown in the sections of this page.</p></div><div class="overview-orb"><b>240</b><small>RESPONDENTS</small></div></div>
+</section>
+
+<section class="survey-section" id="respondentProfile">
+<div class="section-heading"><span>01</span><h2>Respondent Profile</h2><p>The following presents the age, gender, and grade-level distribution of the 240 student respondents.</p></div>
+<div class="profile-intro"><strong>240</strong><div><span>STUDENT RESPONDENTS</span><h3>A profile of the participants</h3><p>The respondent group is largely made up of younger adolescents, with the largest age group at 14–16 years old.</p></div></div>
+<div class="subheading"><span>AGE</span><h3>Age Distribution</h3></div>
+<div class="age-grid">
+<article class="age-card"><div class="shape-circle" style="--value:40%"><b>40%</b></div><span>AGE GROUP</span><h3>11–13</h3><strong>96 respondents</strong><i class="mini-track"><em style="width:40%"></em></i><p>Four out of ten respondents are aged 11–13.</p></article>
+<article class="age-card featured"><em class="featured-label">LARGEST GROUP</em><div class="shape-circle" style="--value:47.5%"><b>47.50%</b></div><span>AGE GROUP</span><h3>14–16</h3><strong>114 respondents</strong><i class="mini-track"><em style="width:47.5%"></em></i><p>This is the largest age group, showing that almost half of the respondents are 14–16 years old.</p></article>
+<article class="age-card"><div class="shape-circle" style="--value:12.5%"><b>12.50%</b></div><span>AGE GROUP</span><h3>17–19</h3><strong>30 respondents</strong><i class="mini-track"><em style="width:12.5%"></em></i><p>A smaller portion of the respondents are aged 17–19.</p></article>
+<article class="age-card muted"><div class="shape-circle" style="--value:0%"><b>0%</b></div><span>AGE GROUP</span><h3>20–22</h3><strong>0 respondents</strong><i class="mini-track"><em style="width:0"></em></i><p>No respondents were recorded in the 20–22 age group.</p></article>
+</div>
+<div class="subheading"><span>GENDER</span><h3>Gender Distribution</h3></div>
+<div class="gender-layout"><article class="gender-feature"><div class="gender-ring"><b>61.25%</b></div><span>MAJORITY</span><h3>Babaye</h3><strong>147 respondents</strong><p>Female respondents make up the majority of the participants.</p></article><div class="gender-list"><article><div class="bubble">36.67%</div><div><h3>Lalaki</h3><p>88 respondents</p><small>More than one-third of the respondents are male.</small></div></article><article><div class="bubble small">2.08%</div><div><h3>Non-binary</h3><p>5 respondents</p><small>A small number of respondents identified as non-binary.</small></div></article></div></div>
+<div class="subheading"><span>GRADE LEVEL</span><h3>Grade-Level Distribution</h3></div>
+<div class="grade-grid"><article class="grade-card"><span>GRADE 7</span><b>47</b><small>19.58%</small><i><em style="width:19.58%"></em></i><label>RESPONDENTS</label></article><article class="grade-card featured"><em>HIGHEST</em><span>GRADE 8</span><b>52</b><small>21.67%</small><i><em style="width:21.67%"></em></i><label>RESPONDENTS</label></article><article class="grade-card"><span>GRADE 9</span><b>48</b><small>20.00%</small><i><em style="width:20%"></em></i><label>RESPONDENTS</label></article><article class="grade-card"><span>GRADE 10</span><b>46</b><small>19.17%</small><i><em style="width:19.17%"></em></i><label>RESPONDENTS</label></article><article class="grade-card"><span>GRADE 11</span><b>27</b><small>11.25%</small><i><em style="width:11.25%"></em></i><label>RESPONDENTS</label></article><article class="grade-card"><em>SMALLEST</em><span>GRADE 12</span><b>20</b><small>8.33%</small><i><em style="width:8.33%"></em></i><label>RESPONDENTS</label></article></div>
+<div class="interpretation-shape"><span>DATA INTERPRETATION</span><h3>A young adolescent-centered respondent group</h3><p>The respondents are largely young adolescents, with the largest age group being 14–16 years old. Female respondents form the majority, while most participants are concentrated in Grades 7–10. Therefore, the findings mainly reflect the experiences, internet behaviors, awareness, and protection needs of younger adolescents.</p></div>
+</section>
+
+<section class="survey-section internet-section" id="internetUse">
+<div class="section-heading"><span>02</span><h2>Internet Use and Online Behavior</h2><p>The following presents how regularly respondents use the internet, where they access it, what they use it for, how much time they spend online, and which platforms they use.</p></div>
+
+<div class="internet-hero">
+  <div class="internet-hero-copy">
+    <span>REGULAR INTERNET USE</span>
+    <strong>92.92%</strong>
+    <h3>Internet use is already part of everyday student life.</h3>
+    <p>223 respondents regularly use the internet, while only 17 respondents reported that they do not regularly use it.</p>
+  </div>
+  <div class="internet-donut" aria-label="92.92 percent regularly use the internet"><b>92.92%</b><small>REGULAR USERS</small></div>
+</div>
+
+<div class="internet-duo">
+  <article class="internet-stat-card positive"><span>YES</span><strong>223</strong><small>respondents</small><p>Almost all respondents regularly use the internet.</p><i><em style="width:92.92%"></em></i><b>92.92%</b></article>
+  <article class="internet-stat-card muted"><span>NO</span><strong>17</strong><small>respondents</small><p>Only a small number do not regularly use the internet.</p><i><em style="width:7.08%"></em></i><b>7.08%</b></article>
+</div>
+
+<div class="internet-interpretation"><span>INTERPRETATION</span><p>With <strong>92.92%</strong> regularly using the internet, online safety education is highly relevant to this group.</p></div>
+
+<div class="subheading"><span>07 • ACCESS</span><h3>Where Students Access the Internet</h3></div>
+<div class="access-orbit">
+  <div class="access-main"><strong>69.17%</strong><span>HOME</span><small>166 respondents</small></div>
+  <div class="access-item access-school"><b>20.42%</b><span>School</span><small>49</small></div>
+  <div class="access-item access-mobile"><b>16.67%</b><span>Mobile data</span><small>40</small></div>
+  <div class="access-item access-wifi"><b>12.08%</b><span>Public Wi-Fi</span><small>29</small></div>
+  <div class="access-item access-friend"><b>10.42%</b><span>Friend/relative's house</span><small>25</small></div>
+  <div class="access-item access-other"><b>1.25%</b><span>Others</span><small>3</small></div>
+</div>
+<div class="access-note"><strong>Home is the main environment for internet access.</strong><span>Online safety discussions should not focus only on school settings; parents and guardians also have an important role in guiding children about safe internet use.</span></div>
+
+<div class="subheading"><span>08 • PURPOSE</span><h3>Main Purpose of Internet Use</h3></div>
+<div class="purpose-layout">
+  <article class="purpose-feature"><span>TOP PURPOSE</span><strong>66.67%</strong><h3>Study / school activities</h3><small>160 respondents</small><p>The internet is primarily used for study and school activities.</p><i><em style="width:66.67%"></em></i></article>
+  <div class="purpose-cards">
+    <article><b>35.42%</b><h3>Chat / messaging</h3><small>85 respondents</small></article>
+    <article><b>33.75%</b><h3>Social media</h3><small>81 respondents</small></article>
+    <article><b>32.08%</b><h3>Videos / entertainment</h3><small>77 respondents</small></article>
+    <article><b>27.08%</b><h3>Searching information</h3><small>65 respondents</small></article>
+    <article><b>24.17%</b><h3>Online games</h3><small>58 respondents</small></article>
+    <article><b>2.08%</b><h3>Others</h3><small>5 respondents</small></article>
+  </div>
+</div>
+<div class="internet-interpretation light"><span>INTERPRETATION</span><p>The internet is primarily used for <strong>study and school activities</strong>, but social media, messaging, entertainment, games, and information searching are also significant activities. Students therefore encounter both educational opportunities and possible online risks in their everyday internet use.</p></div>
+
+<div class="subheading"><span>09 • TIME ONLINE</span><h3>Hours Spent Online per Day</h3></div>
+<div class="time-shapes">
+  <article class="time-shape featured"><strong>40.00%</strong><b>1–3 hours</b><small>96 respondents</small></article>
+  <article class="time-shape"><strong>31.67%</strong><b>4–6 hours</b><small>76 respondents</small></article>
+  <article class="time-shape"><strong>14.17%</strong><b>Below 1 hour</b><small>34 respondents</small></article>
+  <article class="time-shape"><strong>10.83%</strong><b>7–9 hours</b><small>26 respondents</small></article>
+  <article class="time-shape"><strong>6.67%</strong><b>More than 9 hours</b><small>16 respondents</small></article>
+</div>
+<div class="time-callout"><strong>17.50%</strong><span>of respondents spend seven hours or more online each day.</span></div>
+<div class="internet-interpretation light"><span>INTERPRETATION</span><p>The largest group, <strong>40.00%</strong>, spends 1–3 hours online each day. However, <strong>31.67%</strong> spend 4–6 hours, while <strong>17.50%</strong> spend seven hours or more. This indicates that a considerable number of students have extended exposure to online environments.</p></div>
+
+<div class="subheading"><span>10 • PLATFORMS</span><h3>Online Platforms Used</h3></div>
+<div class="platform-showcase">
+  <article class="platform-feature"><span>MOST REPORTED</span><strong>55.42%</strong><h3>Facebook</h3><small>133 respondents</small><i><em style="width:55.42%"></em></i></article>
+  <div class="platform-pills">
+    <article><b>TikTok</b><strong>47.50%</strong><small>114 respondents</small><i><em style="width:47.5%"></em></i></article>
+    <article><b>Messenger</b><strong>44.58%</strong><small>107 respondents</small><i><em style="width:44.58%"></em></i></article>
+    <article><b>YouTube</b><strong>27.50%</strong><small>66 respondents</small><i><em style="width:27.5%"></em></i></article>
+    <article><b>Instagram</b><strong>25.42%</strong><small>61 respondents</small><i><em style="width:25.42%"></em></i></article>
+    <article><b>Online games</b><strong>17.92%</strong><small>43 respondents</small><i><em style="width:17.92%"></em></i></article>
+    <article><b>Others</b><strong>6.67%</strong><small>16 respondents</small><i><em style="width:6.67%"></em></i></article>
+  </div>
+</div>
+<div class="internet-interpretation"><span>INTERPRETATION</span><p><strong>Facebook (55.42%)</strong> is the most commonly reported platform, followed by TikTok and Messenger. This shows that students are actively using social networking and communication platforms where interaction with other people is possible. Therefore, lessons on privacy, online grooming, manipulation, cyberbullying, and safe communication are particularly relevant.</p></div>
+
+<div class="internet-summary-shape"><span>DATA INTERPRETATION</span><h3>Students are highly connected to online spaces</h3><p>Internet use is a normal part of student life, with home as the main access environment and study as the most common purpose. At the same time, many respondents use social platforms, messaging, entertainment, games, and other online services. The amount of time spent online and the platforms used highlight the importance of practical online-safety guidance across both home and school settings.</p></div>
+</section>
+
+<section class="survey-section awareness-section" id="awareness">
+<div class="section-heading"><span>03</span><h2>Awareness, Information Needs and Podcast Preferences</h2><p>The following presents what respondents know, where they receive information, what they want to learn, and how they prefer podcast topics to be discussed.</p></div>
+
+<div class="awareness-hero">
+  <div class="awareness-hero-copy">
+    <span>AWARENESS SNAPSHOT</span>
+    <h3>Awareness is present, but some students remain unsure.</h3>
+    <p>More than half of respondents have heard of both OSAEC and CSAEM, while 26.25% remain unsure about each. Most respondents also know where to seek help.</p>
+  </div>
+  <div class="awareness-orbit">
+    <div class="awareness-orbit-main"><b>76.67%</b><small>KNOW WHERE TO SEEK HELP</small></div>
+    <span class="orbit-dot dot-one">59.58%</span>
+    <span class="orbit-dot dot-two">57.08%</span>
+  </div>
+</div>
+
+<div class="awareness-three">
+  <article class="awareness-main-card">
+    <span>15 • OSAEC</span><strong>59.58%</strong><h3>Have heard of OSAEC</h3><small>143 respondents</small>
+    <i><em style="width:59.58%"></em></i>
+    <div class="mini-break"><b>16.25%</b> No <b>26.25%</b> Not sure</div>
+  </article>
+  <article class="awareness-main-card">
+    <span>16 • CSAEM</span><strong>57.08%</strong><h3>Have heard of CSAEM</h3><small>137 respondents</small>
+    <i><em style="width:57.08%"></em></i>
+    <div class="mini-break"><b>16.67%</b> No <b>26.25%</b> Not sure</div>
+  </article>
+  <article class="awareness-main-card featured-awareness">
+    <span>17 • HELP-SEEKING</span><strong>76.67%</strong><h3>Know where to seek help</h3><small>184 respondents</small>
+    <i><em style="width:76.67%"></em></i>
+    <div class="mini-break"><b>11.67%</b> No <b>11.67%</b> Not sure</div>
+  </article>
+</div>
+
+<div class="awareness-note"><span>INTERPRETATION</span><p>While awareness is present, the <strong>26.25% who remain unsure</strong> about OSAEC and CSAEM show a need for clear, basic, and consistent information. Although <strong>76.67%</strong> know where to seek help, almost one-fourth still do not know or are unsure.</p></div>
+
+<div class="subheading"><span>18 • INFORMATION SOURCES</span><h3>Where Students Receive Information</h3></div>
+<div class="source-constellation">
+  <article class="source-feature"><div class="source-circle"><b>70.42%</b><small>169</small></div><span>STRONGEST SOURCE</span><h3>School / Teacher</h3><p>The school and teachers are the strongest reported source of information.</p></article>
+  <div class="source-grid">
+    <article><b>46.67%</b><h3>Parent / Guardian</h3><small>112 respondents</small><i><em style="width:46.67%"></em></i></article>
+    <article><b>44.58%</b><h3>Child Protection Organization</h3><small>107 respondents</small><i><em style="width:44.58%"></em></i></article>
+    <article><b>32.92%</b><h3>Government / Community Activities</h3><small>79 respondents</small><i><em style="width:32.92%"></em></i></article>
+    <article><b>32.08%</b><h3>Social Media</h3><small>77 respondents</small><i><em style="width:32.08%"></em></i></article>
+    <article><b>15.83%</b><h3>Friends / Peers</h3><small>38 respondents</small><i><em style="width:15.83%"></em></i></article>
+    <article><b>13.33%</b><h3>Television / Radio</h3><small>32 respondents</small><i><em style="width:13.33%"></em></i></article>
+    <article><b>2.92%</b><h3>Others</h3><small>7 respondents</small><i><em style="width:2.92%"></em></i></article>
+    <article><b>0.83%</b><h3>No previous information</h3><small>2 respondents</small><i><em style="width:.83%"></em></i></article>
+  </div>
+</div>
+<div class="awareness-note light"><span>INTERPRETATION</span><p><strong>School and teachers (70.42%)</strong> are the strongest source of information, followed by parents/guardians and child protection organizations. This highlights the role of schools while also supporting stronger family and community involvement.</p></div>
+
+<div class="subheading"><span>19 • LEARNING NEEDS</span><h3>Topics Students Want to Learn</h3></div>
+<div class="learning-shapes">
+  <article class="learning-feature"><span>TOP LEARNING NEED</span><strong>43.33%</strong><h3>Avoiding online danger</h3><small>104 respondents</small><p>Students most frequently selected practical guidance for avoiding online danger.</p></article>
+  <div class="learning-cloud">
+    <article><b>32.08%</b><span>Helping a friend</span><small>77</small></article>
+    <article><b>31.25%</b><span>OSAEC and CSAEM</span><small>75</small></article>
+    <article><b>21.67%</b><span>Cyberbullying</span><small>52</small></article>
+    <article><b>20.42%</b><span>Who to approach</span><small>49</small></article>
+    <article><b>19.17%</b><span>Online grooming</span><small>46</small></article>
+    <article><b>17.08%</b><span>Safer social media use</span><small>41</small></article>
+    <article><b>15.83%</b><span>Online manipulation</span><small>38</small></article>
+    <article><b>15.83%</b><span>How to report</span><small>38</small></article>
+    <article><b>0.83%</b><span>Others</span><small>2</small></article>
+  </div>
+</div>
+<div class="awareness-note"><span>INTERPRETATION</span><p>The strongest learning need is <strong>avoiding online danger (43.33%)</strong>, followed by helping a friend and OSAEC/CSAEM. The responses point toward practical information that students can apply to protect themselves and their peers.</p></div>
+
+<div class="subheading"><span>20 • PODCAST PREFERENCES</span><h3>Preferred Podcast Information</h3></div>
+<div class="podcast-preference-layout">
+  <article class="podcast-feature"><span>MOST PREFERRED</span><strong>43.33%</strong><h3>Real situations / examples</h3><small>104 respondents</small><p>Students prefer content grounded in realistic and relatable situations.</p></article>
+  <div class="podcast-preference-grid">
+    <article><b>40.83%</b><h3>Online safety tips</h3><small>98 respondents</small></article>
+    <article><b>35.42%</b><h3>OSAEC / CSAEM information</h3><small>85 respondents</small></article>
+    <article><b>32.92%</b><h3>Warning signs</h3><small>79 respondents</small></article>
+    <article><b>22.50%</b><h3>Reporting / help-seeking</h3><small>54 respondents</small></article>
+    <article><b>22.08%</b><h3>Interviews</h3><small>53 respondents</small></article>
+    <article><b>20.42%</b><h3>Helping a friend</h3><small>49 respondents</small></article>
+    <article><b>4.58%</b><h3>Others</h3><small>11 respondents</small></article>
+  </div>
+</div>
+<div class="awareness-note light"><span>INTERPRETATION</span><p>Students prefer <strong>real situations and examples (43.33%)</strong> and <strong>online safety tips (40.83%)</strong>, supporting a practical, relatable, youth-friendly podcast approach.</p></div>
+
+<div class="subheading"><span>21 • DISCUSSION STYLE</span><h3>Preferred Way of Discussing Topics</h3></div>
+<div class="discussion-wave">
+  <article class="discussion-feature"><strong>41.25%</strong><span>99 respondents</span><h3>Simple / casual talk</h3><p>The most selected approach for discussing online safety topics.</p></article>
+  <article><b>26.25%</b><h3>Storytelling / scenario</h3><small>63 respondents</small></article>
+  <article><b>22.92%</b><h3>Youth + professional discussion</h3><small>55 respondents</small></article>
+  <article><b>17.92%</b><h3>Interview</h3><small>43 respondents</small></article>
+  <article><b>15.00%</b><h3>Q&amp;A</h3><small>36 respondents</small></article>
+  <article><b>9.58%</b><h3>Combination</h3><small>23 respondents</small></article>
+  <article class="discussion-zero"><b>0.00%</b><h3>Others</h3><small>0 respondents</small></article>
+</div>
+<div class="awareness-summary-shape"><span>DATA INTERPRETATION</span><h3>Practical, relatable, and easy-to-understand communication</h3><p>Awareness of OSAEC and CSAEM is present but not consistent among all respondents. Students most often want practical guidance on avoiding online danger and prefer podcast information based on real situations, examples, and safety tips. Simple or casual discussion is the most selected style, suggesting that the proposed content should remain conversational, relatable, and easy to understand.</p></div>
+</section>
+<section class="survey-section help-section" id="helpSeeking">
+<div class="section-heading"><span>04</span><h2>Help-Seeking and Reporting</h2><p>The following presents how students would respond to online abuse, whom they would approach, what encourages disclosure, and the barriers that may affect reporting.</p></div>
+
+<div class="help-action-hero">
+  <div class="help-action-copy"><span>48 • FIRST ACTION</span><h3>Seeking help is identified as the main response</h3><p>The uploaded data contains four visible entries of <strong>60, 60, 60, and 30</strong>, totaling <strong>210 responses or 87.50%</strong>. Because the source entries appear incomplete or misaligned, the remaining responses should be verified against the original encoded questionnaire.</p></div>
+  <div class="action-cluster">
+    <div><b>60</b><small>response</small></div><div><b>60</b><small>response</small></div><div><b>60</b><small>response</small></div><div><b>30</b><small>response</small></div>
+  </div>
+</div>
+<div class="help-note"><span>INTERPRETATION</span><p>The visible result indicates a strong tendency to identify seeking help from a trusted adult or child protection service as an appropriate first action.</p></div>
+
+<div class="subheading"><span>49 • PERSON TO APPROACH</span><h3>Who Students Would Approach</h3></div>
+<div class="approach-layout">
+  <div class="approach-feature"><span>MOST SELECTED</span><strong>42.50%</strong><h3>Teacher</h3><small>102 respondents</small><div class="help-progress"><em style="width:42.5%"></em></div><p>Teachers are the most frequently identified person to approach.</p></div>
+  <div class="approach-cloud">
+    <article><b>28.33%</b><h4>Parent / Guardian</h4><small>68</small></article><article><b>28.33%</b><h4>Sibling</h4><small>68</small></article><article><b>25.83%</b><h4>Police / Child Protection Unit</h4><small>62</small></article><article><b>20.42%</b><h4>Classmates</h4><small>49</small></article><article><b>20.00%</b><h4>Lola / Lolo</h4><small>48</small></article><article><b>20.00%</b><h4>Trusted Relative</h4><small>48</small></article><article><b>19.17%</b><h4>Barangay Officials</h4><small>46</small></article><article><b>19.17%</b><h4>Trusted Friend / Peer</h4><small>46</small></article><article><b>14.17%</b><h4>Social Worker / Child Protection Worker</h4><small>34</small></article><article><b>13.33%</b><h4>Iyaan</h4><small>32</small></article><article><b>11.67%</b><h4>Ig-agaw</h4><small>28</small></article><article><b>7.50%</b><h4>School Guidance Counselor</h4><small>18</small></article><article><b>4.17%</b><h4>Others</h4><small>10</small></article><article><b>2.50%</b><h4>Pari</h4><small>6</small></article>
+  </div>
+</div>
+<div class="help-note"><span>INTERPRETATION</span><p><strong>Teachers (42.50%)</strong> are the most frequently identified person to approach, followed by parents/guardians and siblings. This highlights the role of teachers and schools as accessible support systems.</p></div>
+
+<div class="subheading"><span>50 • WHY APPROACH THEM</span><h3>Reasons for Seeking Help</h3></div>
+<div class="reason-shapes">
+  <article class="reason-feature"><span>TOP REASON</span><strong>44.58%</strong><h3>They can provide help</h3><small>107 respondents</small><p>Students value actual support when deciding whether to disclose a concern.</p></article>
+  <article><b>41.67%</b><h4>I trust them</h4><small>100 respondents</small></article><article><b>17.92%</b><h4>They won't judge me</h4><small>43 respondents</small></article><article><b>12.08%</b><h4>They will listen</h4><small>29 respondents</small></article><article><b>7.08%</b><h4>They are near / accessible</h4><small>17 respondents</small></article><article><b>1.67%</b><h4>Others</h4><small>4 respondents</small></article>
+</div>
+<div class="help-note"><span>INTERPRETATION</span><p>The strongest reasons are that the person <strong>can provide help (44.58%)</strong> and is trusted <strong>(41.67%)</strong>, showing the importance of both trust and actual support.</p></div>
+
+<div class="subheading"><span>51 • DISCLOSURE BARRIERS</span><h3>Why a Learner May Not Disclose Abuse</h3></div>
+<div class="disclosure-layout">
+  <div class="disclosure-feature"><span>LEADING BARRIER</span><strong>57.92%</strong><h3>Shame / fear of others' reaction</h3><small>139 respondents</small><div class="help-progress"><em style="width:57.92%"></em></div></div>
+  <div class="disclosure-grid"><article><b>34.58%</b><h4>Afraid they won't be believed</h4><small>83</small><i><em style="width:34.58%"></em></i></article><article class="source-caveat-card"><b>24.58%*</b><h4>Afraid of being scolded / punished</h4><small>59*</small><i><em style="width:24.58%"></em></i></article><article><b>22.50%</b><h4>Afraid of the abuser</h4><small>54</small><i><em style="width:22.5%"></em></i></article><article><b>22.50%</b><h4>Doesn't know whom to approach</h4><small>54</small><i><em style="width:22.5%"></em></i></article><article><b>12.08%</b><h4>Wants to keep it secret</h4><small>29</small><i><em style="width:12.08%"></em></i></article><article><b>9.17%</b><h4>Abuser is known / close to them</h4><small>22</small><i><em style="width:9.17%"></em></i></article><article><b>12.08%</b><h4>Others</h4><small>29</small><i><em style="width:12.08%"></em></i></article></div>
+</div>
+<div class="help-note"><span>INTERPRETATION</span><p>The most significant reported reason is <strong>shame or fear of others' reactions (57.92%)</strong>, followed by fear that they will not be believed (34.58%). A safe and supportive reporting environment is therefore important.</p></div>
+<div class="source-warning">* The source has a missing value in the scolded/punished row, so this figure is based only on the frequency visible in the uploaded data.</div>
+
+<div class="subheading"><span>52 • COMFORT TO SEEK HELP</span><h3>What Can Make a Child Comfortable to Seek Help</h3></div>
+<div class="comfort-shapes">
+  <article class="comfort-feature"><span>STRONGEST FACTOR</span><strong>46.25%</strong><h3>Clear information on where to seek help</h3><small>111 respondents</small><p>Students need simple and accessible information about referral pathways, reporting channels, and available services.</p></article>
+  <article><b>22.92%</b><h4>Trusted adult listens and believes them</h4><small>55 respondents</small></article><article><b>8.33%</b><h4>Assurance of protection</h4><small>20 respondents</small></article><article><b>7.50%</b><h4>All of the above</h4><small>18 respondents</small></article><article><b>4.17%</b><h4>Not being blamed</h4><small>10 respondents</small></article>
+</div>
+
+<div class="subheading"><span>53 • REPORTING BARRIERS</span><h3>Barriers to Reporting</h3></div>
+<div class="reporting-ring-grid">
+  <article class="reporting-major"><div class="report-ring" style="--value:47.5%"><b>47.50%</b></div><h4>Fear</h4><small>114 respondents</small></article>
+  <article><b>30.42%</b><h4>Perpetrator is known to them</h4><small>73 respondents</small><div class="help-progress"><em style="width:30.42%"></em></div></article>
+  <article><b>29.17%</b><h4>Shame</h4><small>70 respondents</small><div class="help-progress"><em style="width:29.17%"></em></div></article>
+  <article><b>22.50%</b><h4>Doesn't trust the person / service</h4><small>54 respondents</small><div class="help-progress"><em style="width:22.5%"></em></div></article>
+  <article><b>20.00%</b><h4>Afraid others will know</h4><small>48 respondents</small><div class="help-progress"><em style="width:20%"></em></div></article>
+  <article><b>14.17%</b><h4>Doesn't know where to report</h4><small>34 respondents</small><div class="help-progress"><em style="width:14.17%"></em></div></article>
+  <article><b>11.67%</b><h4>Others</h4><small>28 respondents</small><div class="help-progress"><em style="width:11.67%"></em></div></article>
+</div>
+<div class="help-note"><span>INTERPRETATION</span><p><strong>Fear (47.50%)</strong> is the largest reported barrier, followed by the perpetrator being known to the child (30.42%) and shame (29.17%).</p></div>
+
+<div class="subheading"><span>54 • APPROPRIATE PERSON / RESOURCE</span><h3>Where Students Identify Appropriate Support</h3></div>
+<div class="resource-constellation">
+  <div class="resource-main"><span>CLEARLY RECORDED RESPONSE</span><strong>91.67%</strong><h3>Trusted adult / School Guidance Counselor</h3><small>220 respondents</small><p>The clearly recorded response shows a very strong preference for a trusted adult or school guidance counselor.</p></div>
+  <div class="resource-orbit"><article><b>20*</b><span>8.33%*</span><small>Unknown online user</small></article><article><b>33*</b><span>13.75%*</span><small>Random social media follower</small></article><article><b>27*</b><span>11.25%*</span><small>Online stranger</small></article></div>
+</div>
+<div class="source-warning">* The source appears to contain misaligned or incomplete entries for this question. These responses should be verified against the original dataset before final reporting.</div>
+
+<div class="subheading"><span>55 • REFERRAL PATHWAY</span><h3>Purpose of Referral</h3></div>
+<div class="referral-shape"><div class="referral-number">87.08%</div><div><span>209 respondents</span><h3>Connect person to appropriate service / support</h3><p>The data indicates that students understand referral as a way to connect a person to the appropriate service or support.</p></div></div>
+<div class="source-warning">* The remaining 12.92% represents other responses based on the visible entries in the source.</div>
+
+<div class="help-final"><span>DATA INTERPRETATION</span><h3>Trust, protection, and clear reporting information matter</h3><p>Most students identify a trusted adult or school-based support person as an appropriate resource. Teachers are the most frequently identified person to approach, while trust and the expectation of receiving actual help are the strongest reasons for seeking support. Fear, shame, and concern about others' reactions remain major barriers. Clear information about where to seek help is the strongest recorded comfort factor.</p></div>
+</section>
+
+<section class="survey-section overall-section" id="overallData">
+<div class="section-heading"><span>05</span><h2>Overall Data Interpretation</h2><p>A visual synthesis of the major findings from the 240 student respondents.</p></div>
+<div class="overall-hero"><div><span>THE BIG PICTURE</span><h3>From everyday internet use to practical online protection</h3><p>The findings show that online activity is already deeply integrated into students' everyday lives. The data also points to a need to connect awareness with practical knowledge, trusted support, and clear reporting pathways.</p></div><div class="overall-hero-number"><strong>240</strong><small>STUDENT<br>RESPONDENTS</small></div></div>
+<div class="overall-pillars">
+  <article><span>01</span><strong>92.92%</strong><h3>Regular internet use</h3><p>Internet use is already a normal part of daily life for almost all respondents.</p></article>
+  <article><span>02</span><strong>69.17%</strong><h3>Home access</h3><p>Home is the most common place where respondents access the internet.</p></article>
+  <article><span>03</span><strong>66.67%</strong><h3>Study purpose</h3><p>Study and school activities are the most commonly reported purpose.</p></article>
+  <article><span>04</span><strong>59.58%</strong><h3>OSAEC awareness</h3><p>Most have heard of OSAEC, while 26.25% remain unsure.</p></article>
+  <article><span>05</span><strong>57.08%</strong><h3>CSAEM awareness</h3><p>Most have heard of CSAEM, while 26.25% remain unsure.</p></article>
+  <article><span>06</span><strong>47.50%</strong><h3>Fear as a barrier</h3><p>Fear is the largest reported barrier to reporting.</p></article>
+  <article><span>07</span><strong>46.25%</strong><h3>Clear help information</h3><p>Clear information on where to seek help is the strongest comfort factor.</p></article>
+  <article><span>08</span><strong>43.33%</strong><h3>Real situations / examples</h3><p>Real situations and examples are the most preferred podcast information.</p></article>
+</div>
+<div class="overall-story">
+  <div class="story-marker"><span>01</span><b>EVERYDAY DIGITAL LIFE</b></div><div><h3>Internet use is deeply integrated into students' lives.</h3><p>With <strong>92.92%</strong> regularly using the internet and <strong>69.17%</strong> accessing it at home, online safety cannot be treated as a school-only issue. Study and school activities are the most common purpose at <strong>66.67%</strong>, while social media, messaging, entertainment, games, and information searching also form part of students' online experiences.</p></div>
+</div>
+<div class="overall-story">
+  <div class="story-marker"><span>02</span><b>AWARENESS GAP</b></div><div><h3>Knowing the terms does not always mean full understanding.</h3><p>Although <strong>59.58%</strong> have heard of OSAEC and <strong>57.08%</strong> have heard of CSAEM, <strong>26.25%</strong> remain unsure about each concept. This indicates a need for clear, age-appropriate explanations that connect terminology with recognizable online situations.</p></div>
+</div>
+<div class="overall-story">
+  <div class="story-marker"><span>03</span><b>HELP-SEEKING</b></div><div><h3>Students value trusted people and clear pathways.</h3><p>Most respondents know where to seek help, but fear, shame, and concern about reactions remain important barriers. Students also report greater comfort when they have clear information about where to go and when they expect the person they approach to listen, believe them, and provide actual help.</p></div>
+</div>
+<div class="overall-story">
+  <div class="story-marker"><span>04</span><b>PODCAST DIRECTION</b></div><div><h3>Practical, relatable, and youth-friendly communication.</h3><p>Students most often prefer <strong>real situations/examples (43.33%)</strong> and <strong>online safety tips (40.83%)</strong>. Simple/casual discussion is the most selected discussion style at <strong>41.25%</strong>. These findings point toward content built around realistic scenarios, youth-friendly language, practical safety tips, and clear reporting or referral information.</p></div>
+</div>
+<div class="overall-conclusion"><span>OVERALL INTERPRETATION</span><h3>Move from awareness to practical action.</h3><p>The combined findings support a youth-centered online safety and child protection approach that focuses not only on knowing what OSAEC and CSAEM are, but also on recognizing danger, protecting oneself, knowing who to approach, understanding how to report, and knowing how to support a friend.</p><div class="conclusion-shapes"><i>RECOGNIZE</i><i>PROTECT</i><i>REPORT</i><i>SUPPORT</i></div></div>
+</section>
+</section></main>
+<footer>
+
+    <div>
+        <div class="footer-brand">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo" class="footer-logo">
+            <strong>SAFE SCAN</strong>
+        </div>
+        <small>Be Aware. Be Safe. Be You.</small>
+    </div>
+
+    <div>
+        Together for a safer online world.
+    </div>
+
+    <div>
+        #SafeScan &nbsp; #ThinkBeforeYouClick
+    </div>
+
+    <div class="copyright">
+        <p><small>&copy; 2026 SAFE SCAN. All rights reserved.</small></p>
+    </div>
+
+    <div class="footer-partners" aria-label="SAFE SCAN partner logos">
+        <img src="Images/partner-logo-1.png" alt="Partner organization logo">
+        <img src="Images/partner-logo-2.png" alt="German Cooperation logo">
+        <img src="Images/partner-logo-3.png" alt="CPT CSA logo">
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+</body></html>

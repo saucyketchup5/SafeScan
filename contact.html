@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SAFE SCAN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo">
+        </div>
+
+        <div class="logo-text">
+            <h2>SAFE <span>SCAN</span></h2>
+            <p>Be Aware. Be Safe. Be You.</p>
+        </div>
+
+    </a>
+
+    <nav id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="risks.html" class="nav-link">Know the Risks</a>
+        <div class="survey-dropdown">
+            <button type="button" class="nav-link survey-dropdown-btn" id="surveyDropdownButton"
+                    onclick="toggleSurveyDropdown(event)" aria-expanded="false" aria-controls="surveyDropdownMenu">
+                Survey Results <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="survey-dropdown-menu" id="surveyDropdownMenu">
+                <button type="button" onclick="showSurveySection('respondentProfile')"><span>Respondent Profile</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('internetUse')"><span>Internet Use and Online Behavior</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('awareness')"><span>Awareness Information Needs and Podcast Preferences</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('helpSeeking')"><span>Help-Seeking and Reporting</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('overallData')"><span>Overall Data Interpretation</span><b>›</b></button>
+            </div>
+        </div>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="podcast.html" class="nav-link">Podcast</a>
+        <a href="contact.html" class="nav-link active">Contact Us</a>
+        <a href="help.html" class="nav-link">Get Help</a>
+    </nav>
+
+    <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+</header>
+<main>
+<section class="page" id="contact">
+
+    <div class="page-title">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Have a question, suggestion, or message?
+            Send it to us using the form below.
+        </p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+
+        <div class="contact-info">
+
+            <h2>
+                We're here to listen. 💚
+            </h2>
+
+            <p>
+                Your questions and suggestions can help
+                make SAFE SCAN better.
+            </p>
+
+            <h3>Before you send:</h3>
+
+            <ul>
+
+                <li>
+                    Do not include passwords.
+                </li>
+
+                <li>
+                    Do not share sensitive account information.
+                </li>
+
+                <li>
+                    If you are in immediate danger,
+                    contact a trusted adult or emergency service.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <label>Your Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>Your Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+            >
+
+
+            <label>Your Messages</label>
+
+            <textarea
+                id="message"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="btn primary"
+            >
+                Send Message →
+            </button>
+
+
+            <div
+                id="successMessage"
+                class="success-message"
+            ></div>
+
+        </form>
+
+    </div>
+
+</section>
+</main>
+<footer>
+
+    <div>
+        <div class="footer-brand">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo" class="footer-logo">
+            <strong>SAFE SCAN</strong>
+        </div>
+        <small>Be Aware. Be Safe. Be You.</small>
+    </div>
+
+    <div>
+        Together for a safer online world.
+    </div>
+
+    <div>
+        #SafeScan &nbsp; #ThinkBeforeYouClick
+    </div>
+
+    <div class="copyright">
+        <p><small>&copy; 2026 SAFE SCAN. All rights reserved.</small></p>
+    </div>
+
+    <div class="footer-partners" aria-label="SAFE SCAN partner logos">
+        <img src="Images/partner-logo-1.png" alt="Partner organization logo">
+        <img src="Images/partner-logo-2.png" alt="German Cooperation logo">
+        <img src="Images/partner-logo-3.png" alt="CPT CSA logo">
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

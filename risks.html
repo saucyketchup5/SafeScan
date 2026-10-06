@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know the Risks | SAFE SCAN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo">
+        </div>
+
+        <div class="logo-text">
+            <h2>SAFE <span>SCAN</span></h2>
+            <p>Be Aware. Be Safe. Be You.</p>
+        </div>
+
+    </a>
+
+    <nav id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="risks.html" class="nav-link active">Know the Risks</a>
+        <div class="survey-dropdown">
+            <button type="button" class="nav-link survey-dropdown-btn" id="surveyDropdownButton"
+                    onclick="toggleSurveyDropdown(event)" aria-expanded="false" aria-controls="surveyDropdownMenu">
+                Survey Results <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="survey-dropdown-menu" id="surveyDropdownMenu">
+                <button type="button" onclick="showSurveySection('respondentProfile')"><span>Respondent Profile</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('internetUse')"><span>Internet Use and Online Behavior</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('awareness')"><span>Awareness Information Needs and Podcast Preferences</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('helpSeeking')"><span>Help-Seeking and Reporting</span><b>›</b></button>
+                <button type="button" onclick="showSurveySection('overallData')"><span>Overall Data Interpretation</span><b>›</b></button>
+            </div>
+        </div>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="podcast.html" class="nav-link">Podcast</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="help.html" class="nav-link">Get Help</a>
+    </nav>
+
+    <button class="menu-btn" type="button" onclick="toggleMenu()" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+</header>
+<main>
+<section class="page" id="risks">
+
+    <div class="page-title">
+
+        <h2>Know the Risks</h2>
+
+        <p>
+            Learn about common online risks and how to recognize
+            warning signs.
+        </p>
+
+    </div>
+
+
+    <div class="risk-grid">
+
+
+        <div class="card risk-card risk-card-clickable" role="button" tabindex="0"
+             aria-haspopup="dialog" aria-controls="onlineGroomingModal"
+             onclick="openRiskModal('onlineGroomingModal')"
+             onkeydown="if(event.key === 'Enter' || event.key === ' '){event.preventDefault(); openRiskModal('onlineGroomingModal');}">
+
+            <span>01</span>
+
+            <h3>Online Grooming</h3>
+
+            <p>
+                Someone may build trust with a young person
+                and eventually pressure them to share private
+                information or images.
+            </p>
+
+            <small class="click-to-learn">Click to learn more →</small>
+
+        </div>
+
+
+        <div class="card risk-card risk-card-clickable" role="button" tabindex="0"
+             aria-haspopup="dialog" aria-controls="cyberbullyingModal"
+             onclick="openRiskModal('cyberbullyingModal')"
+             onkeydown="if(event.key === 'Enter' || event.key === ' '){event.preventDefault(); openRiskModal('cyberbullyingModal');}">
+
+            <span>02</span>
+
+            <h3>Cyberbullying</h3>
+
+            <p>
+                Harmful messages, threats, harassment,
+                humiliation, or repeated online abuse.
+            </p>
+
+            <small class="click-to-learn">Click to learn more →</small>
+
+        </div>
+
+
+        <div class="card risk-card risk-card-clickable" role="button" tabindex="0"
+             aria-haspopup="dialog" aria-controls="privacyOversharingModal"
+             onclick="openRiskModal('privacyOversharingModal')"
+             onkeydown="if(event.key === 'Enter' || event.key === ' '){event.preventDefault(); openRiskModal('privacyOversharingModal');}">
+
+            <span>03</span>
+
+            <h3>Privacy & Oversharing</h3>
+
+            <p>
+                Sharing too much personal information can make
+                it easier for strangers to identify or contact you.
+            </p>
+
+            <small class="click-to-learn">Click to learn more →</small>
+
+        </div>
+
+
+        <div class="card risk-card risk-card-clickable" role="button" tabindex="0"
+             aria-haspopup="dialog" aria-controls="scamsPhishingModal"
+             onclick="openRiskModal('scamsPhishingModal')"
+             onkeydown="if(event.key === 'Enter' || event.key === ' '){event.preventDefault(); openRiskModal('scamsPhishingModal');}">
+
+            <span>04</span>
+
+            <h3>Scams & Phishing</h3>
+
+            <p>
+                Be careful with suspicious links, fake giveaways,
+                password requests, and urgent messages.
+            </p>
+
+            <small class="click-to-learn">Click to learn more →</small>
+
+        </div>
+
+
+        <div class="card risk-card risk-card-clickable" role="button" tabindex="0"
+             aria-haspopup="dialog" aria-controls="unsafeContentModal"
+             onclick="openRiskModal('unsafeContentModal')"
+             onkeydown="if(event.key === 'Enter' || event.key === ' '){event.preventDefault(); openRiskModal('unsafeContentModal');}">
+
+            <span>05</span>
+
+            <h3>Unsafe Content</h3>
+
+            <p>
+                Young people may encounter harmful, violent,
+                sexual, or inappropriate content online.
+            </p>
+
+            <small class="click-to-learn">Click to learn more →</small>
+
+        </div>
+
+
+        <div class="card risk-card risk-card-clickable" role="button" tabindex="0"
+             aria-haspopup="dialog" aria-controls="unsafeMeetingsModal"
+             onclick="openRiskModal('unsafeMeetingsModal')"
+             onkeydown="if(event.key === 'Enter' || event.key === ' '){event.preventDefault(); openRiskModal('unsafeMeetingsModal');}">
+
+            <span>06</span>
+
+            <h3>Unsafe Meetings</h3>
+
+            <p>
+                Be cautious when someone online pressures you
+                to meet privately or keep the meeting secret.
+            </p>
+
+            <small class="click-to-learn">Click to learn more →</small>
+
+        </div>
+
+    </div>
+
+
+    <div class="warning">
+
+        🚩 <strong>Remember:</strong>
+
+        If something online makes you uncomfortable,
+        stop, block or report when appropriate,
+        and tell a trusted adult.
+
+    </div>
+
+
+    <!-- Online Grooming information popup -->
+    <div class="risk-modal" id="onlineGroomingModal" role="dialog" aria-modal="true"
+         aria-labelledby="onlineGroomingTitle" aria-hidden="true">
+        <div class="risk-modal-backdrop" onclick="closeRiskModal('onlineGroomingModal')"></div>
+        <div class="risk-modal-dialog" role="document">
+            <button class="risk-modal-close" type="button" aria-label="Close online grooming information"
+                    onclick="closeRiskModal('onlineGroomingModal')">&times;</button>
+
+            <div class="risk-modal-hero">
+                <div>
+                    <span class="risk-modal-label">RISK 01</span>
+                    <h2 id="onlineGroomingTitle">Online Grooming</h2>
+                    <p>Learn how grooming works, where it can happen, and what warning signs to watch for.</p>
+                </div>
+                <img src="Images/online-grooming.png" alt="Young person using a computer while a suspicious figure reaches toward the screen">
+            </div>
+
+            <div class="risk-modal-content">
+                <section>
+                    <h3>What is online grooming?</h3>
+                    <p>Online grooming happens when someone deliberately builds a child or young person's trust online. They may use friendly messages, compliments, gifts, or pretend to share the same interests. After gaining trust, they can slowly push the person toward sharing private information, pictures, or doing things they are not comfortable with.</p>
+                    <p>Groomers may also use <strong>blackmail</strong>. They can threaten to expose private conversations or images unless the victim follows their demands. Because online communication can be private and happen quickly, grooming and blackmail can become especially difficult to recognize.</p>
+                </section>
+
+                <section class="risk-modal-media-row">
+                    <div>
+                        <h3>Where can it happen?</h3>
+                        <p>Grooming can happen on almost any platform that young people use, including social media, online games, chat rooms, live-streaming services, messaging apps, and video-chat tools. A person may also learn about a target by looking at public posts, profiles, photos, and other information shared online before starting a conversation.</p>
+                    </div>
+                    <img src="Images/online-grooming2.png" alt="Example of manipulative messages from a suspicious online contact">
+                </section>
+
+                <section>
+                    <h3>How does it happen?</h3>
+                    <p>A groomer may start with an ordinary conversation and gradually try to make the relationship feel private or special. They might pretend to be a young person, create more than one account, send random friend requests, or move the conversation from a public space into private messages. Over time, they may ask for photos, personal details, video calls, or secrecy.</p>
+                    <p><strong>Remember:</strong> You do not need to panic or stop using the internet. The important thing is to know that risks can exist on any platform and to recognize when someone's behavior crosses a boundary.</p>
+                </section>
+
+                <div class="risk-modal-safety">
+                    <strong>🚩 If something feels wrong:</strong> stop replying, do not send more information or images, block the account, report it to the platform, and tell a trusted adult or another person who can help. If someone is threatening or blackmailing you, save evidence and ask for help rather than handling it alone.
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <!-- Privacy & Oversharing information popup -->
+    <div class="risk-modal" id="privacyOversharingModal" role="dialog" aria-modal="true"
+         aria-labelledby="privacyOversharingTitle" aria-hidden="true">
+        <div class="risk-modal-backdrop" onclick="closeRiskModal('privacyOversharingModal')"></div>
+        <div class="risk-modal-dialog" role="document">
+            <button class="risk-modal-close" type="button" aria-label="Close privacy and oversharing information"
+                    onclick="closeRiskModal('privacyOversharingModal')">&times;</button>
+
+            <div class="risk-modal-hero privacy-oversharing-hero">
+                <div>
+                    <span class="risk-modal-label">RISK 03</span>
+                    <h2 id="privacyOversharingTitle">Privacy & Oversharing</h2>
+                    <p>Understand why protecting personal information matters and how to share safely online.</p>
+                </div>
+                <img src="Images/privacy-security.png" alt="Illustration of a person using a computer while protecting personal information online">
+            </div>
+
+            <div class="risk-modal-content">
+                <section>
+                    <h3>What are privacy and oversharing?</h3>
+                    <p><strong>Privacy</strong> is the practice of protecting your personal information and controlling who can access or use it. Personal information can include your full name, home address, phone number, email address, passwords, school or workplace, photographs, location, financial information, and other details about your personal life. Protecting this information helps reduce the risk of identity theft, scams, hacking, harassment, and other online threats.</p>
+                    <p><strong>Oversharing</strong> happens when you share more personal information online than is necessary or safe. This can happen through social media posts, comments, photos, videos, online profiles, or even private conversations. Information that may seem harmless, such as your birthday, daily routine, vacation plans, or current location, can sometimes be combined with other details and used by people with harmful intentions.</p>
+                </section>
+
+                <section class="risk-modal-media-row">
+                    <div>
+                        <h3>Think before you share</h3>
+                        <p>It is important to <strong>think before you post, send, or share</strong>. Ask yourself whether the information is necessary to share, who can see it, and what could happen if it becomes public.</p>
+                        <p>Avoid sharing passwords, financial information, exact addresses, private documents, or other sensitive information online.</p>
+                    </div>
+                    <img src="Images/privacy-protection.png" alt="Illustrations showing different ways to protect personal information and online accounts">
+                </section>
+
+                <section>
+                    <h3>Remember</h3>
+                    <p>Not everything needs to be shared. Even when your social media account is private, screenshots and forwarded messages can allow your information to reach a much wider audience. Being careful about what you share is an important part of staying safe and protecting yourself online.</p>
+                </section>
+
+                <div class="risk-modal-safety">
+                    <strong>🔐 Think before you share.</strong> Protect your privacy. Share wisely. If you are unsure whether something is safe to post or send, ask a trusted adult or someone you trust before sharing it.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scams & Phishing information popup -->
+    <div class="risk-modal" id="scamsPhishingModal" role="dialog" aria-modal="true"
+         aria-labelledby="scamsPhishingTitle" aria-hidden="true">
+        <div class="risk-modal-backdrop" onclick="closeRiskModal('scamsPhishingModal')"></div>
+        <div class="risk-modal-dialog" role="document">
+            <button class="risk-modal-close" type="button" aria-label="Close scams and phishing information"
+                    onclick="closeRiskModal('scamsPhishingModal')">&times;</button>
+
+            <div class="risk-modal-hero scams-phishing-hero">
+                <div>
+                    <span class="risk-modal-label">RISK 04</span>
+                    <h2 id="scamsPhishingTitle">Scams & Phishing</h2>
+                    <p>Learn how scams and phishing work, recognize common warning signs, and protect yourself from suspicious messages and links.</p>
+                </div>
+                <img src="Images/scams-phishing-main.png"
+                     alt="Illustration showing common online scams, suspicious login attempts, and warning signs">
+            </div>
+
+            <div class="risk-modal-content">
+                <section>
+                    <h3>What are scams and phishing?</h3>
+                    <p><strong>Scams and phishing</strong> are tricks used by criminals to deceive people into giving away money, personal information, passwords, account details, or access to their devices. They can happen through social media, emails, text messages, gaming platforms, websites, and messaging apps.</p>
+                    <p><strong>Phishing</strong> is a type of scam where someone pretends to be a trusted person or organization, such as a bank, school, delivery company, social media platform, or government agency. They may send a message asking you to click a link, download something, or provide private information.</p>
+                    <p>Scammers often try to make people feel <strong>worried, excited, curious, or rushed</strong> so they will act without checking if the message is real.</p>
+                </section>
+
+                <section class="risk-modal-media-row scams-phishing-media">
+                    <div>
+                        <h3>Common signs of scams and phishing</h3>
+                        <ul>
+                            <li><strong>Suspicious messages or links</strong> that ask you to log in, provide personal information, or click something urgently.</li>
+                            <li><strong>Fake prizes, jobs, offers, or giveaways</strong> that ask for money or personal details before you can receive them.</li>
+                            <li><strong>Someone pretending to be a trusted person or organization</strong> and asking for passwords, verification codes, money, or other private information.</li>
+                            <li><strong>Strange websites, account names, email addresses, or messages</strong> with unusual spelling and grammar.</li>
+                        </ul>
+                    </div>
+                    <img src="Images/scams-phishing-laptop.gif"
+                         alt="Illustration of a suspicious person looking through a laptop screen">
+                </section>
+
+                <section class="risk-modal-media-row scams-phishing-media scams-phishing-media-reverse">
+                    <div>
+                        <h3>How can you protect yourself?</h3>
+                        <ul>
+                            <li><strong>Stop and check before clicking</strong> links, downloading files, or replying to unexpected messages.</li>
+                            <li><strong>Never share your passwords or verification codes</strong>, even if someone claims to be from a trusted organization.</li>
+                            <li><strong>Use official websites or apps</strong> to check whether a message or offer is genuine instead of using the link provided.</li>
+                            <li><strong>Ask a trusted adult, teacher, parent, or another trusted person</strong> if you are unsure about something.</li>
+                            <li><strong>Report and block suspicious accounts or messages</strong> and save evidence such as screenshots if you think you have been targeted.</li>
+                        </ul>
+                    </div>
+                    <img src="Images/scams-phishing-email.png"
+                         alt="Illustration of a person being targeted by a phishing email">
+                </section>
+
+                <section>
+                    <h3>Remember</h3>
+                    <p><strong>If a message makes you feel rushed, scared, or too excited, stop and think before you act.</strong> When something seems too good to be true or asks for private information, it is safer to check first.</p>
+                </section>
+
+                <div class="risk-modal-safety">
+                    <strong>🚩 Stop, check, and think.</strong> Do not click suspicious links or share private information just because a message feels urgent. If you are unsure, ask a trusted person for help.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unsafe Content information popup -->
+    <div class="risk-modal" id="unsafeContentModal" role="dialog" aria-modal="true"
+         aria-labelledby="unsafeContentTitle" aria-hidden="true">
+        <div class="risk-modal-backdrop" onclick="closeRiskModal('unsafeContentModal')"></div>
+        <div class="risk-modal-dialog" role="document">
+            <button class="risk-modal-close" type="button" aria-label="Close unsafe content information"
+                    onclick="closeRiskModal('unsafeContentModal')">&times;</button>
+
+            <div class="risk-modal-hero unsafe-content-hero">
+                <div>
+                    <span class="risk-modal-label">RISK 05</span>
+                    <h2 id="unsafeContentTitle">Unsafe Content</h2>
+                    <p>Learn how to recognize harmful or inappropriate content online and what to do when something makes you feel uncomfortable or unsafe.</p>
+                </div>
+                <img src="Images/unsafe-content-top.jpg"
+                     alt="Illustration showing the dangers of harmful and unsafe social media content">
+            </div>
+
+            <div class="risk-modal-content">
+                <section>
+                    <h3>What is unsafe content?</h3>
+                    <p><strong>Unsafe content</strong> is online material that can be harmful, disturbing, inappropriate, or dangerous, especially for children and young people. It can appear on social media, websites, video platforms, messaging apps, online games, or through links and messages shared by other people.</p>
+                    <p>Unsafe content can include things that encourage harmful behavior, show violence, contain inappropriate sexual material, promote dangerous challenges, or spread hateful and harmful ideas. Sometimes, this content appears unexpectedly even when someone was not searching for it.</p>
+                </section>
+
+                <section>
+                    <h3>What can unsafe content include?</h3>
+                    <ul>
+                        <li><strong>Violent or disturbing material</strong>, such as graphic images, videos, or content showing people being harmed.</li>
+                        <li><strong>Sexual or inappropriate content</strong> that is not suitable for children and young people.</li>
+                        <li><strong>Hateful or harmful content</strong> that encourages discrimination, bullying, harassment, or violence against others.</li>
+                        <li><strong>Dangerous challenges or activities</strong> that encourage people to hurt themselves or others.</li>
+                        <li><strong>False or misleading information</strong> that can cause fear, confusion, or encourage unsafe decisions.</li>
+                    </ul>
+                </section>
+
+                <section class="risk-modal-media-row unsafe-content-media">
+                    <div>
+                        <h3>How can you stay safe?</h3>
+                        <ul>
+                            <li><strong>Do not interact with or share unsafe content</strong> if it makes you uncomfortable or seems harmful.</li>
+                            <li><strong>Leave the page, video, chat, or game</strong> and use the platform's report and block features when appropriate.</li>
+                            <li><strong>Use privacy and content controls</strong> to reduce the chance of seeing inappropriate material.</li>
+                            <li><strong>Talk to a trusted adult</strong> if you see something disturbing, threatening, or difficult to understand.</li>
+                        </ul>
+                    </div>
+                    <img src="Images/unsafe-content-student.png"
+                         alt="Young person using a phone online">
+                </section>
+
+                <section>
+                    <h3>Remember</h3>
+                    <p><strong>You are not responsible for content that appears unexpectedly.</strong> If something online makes you feel uncomfortable, scared, confused, or unsafe, you can leave it, report it, and ask someone you trust for help.</p>
+                </section>
+
+                <div class="risk-modal-safety">
+                    <strong>🚩 If something online feels unsafe:</strong> leave it, report it when appropriate, and tell a trusted adult or someone who can help. You do not have to handle disturbing or harmful content alone.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unsafe Meetings information popup -->
+    <div class="risk-modal" id="unsafeMeetingsModal" role="dialog" aria-modal="true"
+         aria-labelledby="unsafeMeetingsTitle" aria-hidden="true">
+        <div class="risk-modal-backdrop" onclick="closeRiskModal('unsafeMeetingsModal')"></div>
+        <div class="risk-modal-dialog" role="document">
+            <button class="risk-modal-close" type="button" aria-label="Close unsafe meetings information"
+                    onclick="closeRiskModal('unsafeMeetingsModal')">&times;</button>
+
+            <div class="risk-modal-hero unsafe-meetings-hero">
+                <div>
+                    <span class="risk-modal-label">RISK 06</span>
+                    <h2 id="unsafeMeetingsTitle">Unsafe Meetings</h2>
+                    <p>Learn how to recognize risky online meeting situations and stay safe when someone you met online wants to meet in person.</p>
+                </div>
+                <img src="Images/unsafe-meetings-top.png"
+                     alt="Illustration of people communicating online through social media and digital devices">
+            </div>
+
+            <div class="risk-modal-content">
+                <section>
+                    <h3>What are unsafe meetings?</h3>
+                    <p><strong>Unsafe meetings</strong> happen when someone meets a person they first met online without taking proper safety precautions. People online may not always be who they claim to be, and someone can hide their real identity, age, or intentions.</p>
+                    <p>Meeting an online contact in person can be risky, especially when the person pressures you to keep the meeting secret or asks you to meet somewhere private. Even if you have talked to someone for a long time, you may still not know who they really are.</p>
+                </section>
+
+                <section>
+                    <h3>What are some warning signs?</h3>
+                    <ul>
+                        <li><strong>Someone you met online asks to meet privately</strong>, especially in an isolated place or without telling a trusted adult.</li>
+                        <li><strong>They ask you to keep the meeting a secret</strong> from your parents, guardians, teachers, or friends.</li>
+                        <li><strong>They pressure or threaten you</strong> when you say you do not want to meet.</li>
+                        <li><strong>Their stories or identity seem inconsistent</strong>, such as changing their age, name, or personal details.</li>
+                        <li><strong>They offer gifts, money, transportation, or other rewards</strong> to convince you to meet them.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>How can you stay safe?</h3>
+                    <ul>
+                        <li><strong>Do not meet someone you only know online by yourself.</strong></li>
+                        <li><strong>Tell a trusted adult</strong> before considering any meeting with an online contact.</li>
+                        <li>If a meeting is necessary, <strong>choose a busy public place and have a trusted adult accompany you.</strong></li>
+                        <li><strong>Never get into a stranger's vehicle or go somewhere private</strong> because they ask you to.</li>
+                        <li>If you feel uncomfortable or pressured, <strong>leave and get help immediately.</strong></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Remember</h3>
+                    <p><strong>You never have to meet someone just because you have been talking to them online.</strong> If someone truly respects you, they will respect your boundaries and will not pressure you to meet secretly.</p>
+                </section>
+
+                <div class="risk-modal-safety">
+                    <strong>🚩 If someone pressures you to meet:</strong> stop the conversation, tell a trusted adult, and do not go somewhere private or meet the person alone. Your safety comes first.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cyberbullying information popup -->
+    <div class="risk-modal" id="cyberbullyingModal" role="dialog" aria-modal="true"
+         aria-labelledby="cyberbullyingTitle" aria-hidden="true">
+        <div class="risk-modal-backdrop" onclick="closeRiskModal('cyberbullyingModal')"></div>
+        <div class="risk-modal-dialog" role="document">
+            <button class="risk-modal-close" type="button" aria-label="Close cyberbullying information"
+                    onclick="closeRiskModal('cyberbullyingModal')">&times;</button>
+
+            <div class="risk-modal-hero">
+                <div>
+                    <span class="risk-modal-label">RISK 02</span>
+                    <h2 id="cyberbullyingTitle">Cyberbullying</h2>
+                    <p>Understand what cyberbullying looks like, where it happens, and how to respond safely.</p>
+                </div>
+                <img src="Images/cyberbullying.png"
+                     alt="Illustration of people using technology to bully and target someone online">
+            </div>
+
+            <div class="risk-modal-content">
+                <section>
+                    <h3>What is cyberbullying?</h3>
+                    <p>Cyberbullying is bullying that happens through digital technology. It can occur on social media, messaging apps, gaming platforms, websites, and mobile phones. The goal may be to frighten, embarrass, shame, anger, or isolate another person.</p>
+                    <p>It can include spreading false stories or embarrassing photos and videos, sending cruel or threatening messages, or repeatedly targeting someone through online posts and chats.</p>
+                </section>
+
+                <section class="risk-modal-media-row">
+                    <div>
+                        <h3>What can it look like?</h3>
+                        <p>Someone might pretend to be another person and use a fake account to send hurtful messages. They may also share private content without permission, encourage others to join in, or use sexual harassment and bullying through digital tools, including AI-generated content.</p>
+                        <p>Cyberbullying can happen at the same time as bullying in person. Because online actions can leave a <strong>digital footprint</strong>, screenshots, messages, posts, and other records may provide important evidence of what happened.</p>
+                    </div>
+                    <img src="Images/cyberbullying2.png"
+                         alt="Illustration of a person upset by angry and insulting messages on a device">
+                </section>
+
+                <section>
+                    <h3>Where can it happen?</h3>
+                    <p>Cyberbullying can happen almost anywhere people communicate or spend time online, including social media, group chats, direct messages, online games, livestreams, forums, and mobile devices. It can move quickly between different platforms, so saving evidence can be helpful.</p>
+                </section>
+
+                <div class="risk-modal-safety">
+                    <strong>🚩 If you are being cyberbullied:</strong> do not respond with more abuse. Save screenshots or other evidence, block or mute the person when appropriate, report the account or content, and tell a trusted adult or someone who can support you. You do not have to deal with online bullying alone.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</section>
+</main>
+<footer>
+
+    <div>
+        <div class="footer-brand">
+            <img src="Images/logo.png" alt="SAFE SCAN Logo" class="footer-logo">
+            <strong>SAFE SCAN</strong>
+        </div>
+        <small>Be Aware. Be Safe. Be You.</small>
+    </div>
+
+    <div>
+        Together for a safer online world.
+    </div>
+
+    <div>
+        #SafeScan &nbsp; #ThinkBeforeYouClick
+    </div>
+
+    <div class="copyright">
+        <p><small>&copy; 2026 SAFE SCAN. All rights reserved.</small></p>
+    </div>
+
+    <div class="footer-partners" aria-label="SAFE SCAN partner logos">
+        <img src="Images/partner-logo-1.png" alt="Partner organization logo">
+        <img src="Images/partner-logo-2.png" alt="German Cooperation logo">
+        <img src="Images/partner-logo-3.png" alt="CPT CSA logo">
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
